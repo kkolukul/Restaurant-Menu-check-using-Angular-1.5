@@ -1,12 +1,12 @@
 (function() {
 
-  angular.module('myapp',[])
+  angular.module('LunchCheck',[])
 
-  .controller('mycontr',msgcontroller);
-msgcontroller.$inject = ['$scope'];
-function msgcontroller($scope) {
+  .controller('LunchCheckController',controller);
+controller.$inject = ['$scope'];
+function controller($scope) {
 
-    $scope.name="kamal";
+
     $scope.items="";
 
   $scope.check_noOfiems = function (str) {
