@@ -37,7 +37,7 @@ MenuSearchService.$inject = ['$http'];
        var promise = MenuSearchService.getMatchedMenuItems(searchTerm);
        promise.then(function (response) {
          ctrl.found = response;
-         console.log('founditems',ctrl.found);
+        
        })
        .catch( function (error) {
          console.log('error occured in retreiving');

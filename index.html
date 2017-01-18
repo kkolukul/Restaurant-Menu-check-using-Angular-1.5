@@ -20,7 +20,9 @@
       <button class="btn btn-primary" ng-click="ctrl.menusearch(searchTerm)">Narrow It Down For Me!</button>
     </div>
   </div>
-
+    <div class="" ng-if="ctrl.found.length ===0">
+      No items found
+    </div>
     <!-- found-items should be implemented as a component -->
       <found-items  items="ctrl.found" on-remove="ctrl.removeItem(index)"></found-items>
 </body>
