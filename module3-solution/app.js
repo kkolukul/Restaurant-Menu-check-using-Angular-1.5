@@ -53,7 +53,7 @@ MenuSearchService.$inject = ['$http'];
 
  function FoundItems() {
    var ddo = {
-     templateUrl : 'founditems.html',
+     templateUrl : 'module3-solution/founditems.html',
      scope : {
        onRemove : '&',
        items : '<'
